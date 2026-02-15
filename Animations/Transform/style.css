@@ -1,0 +1,52 @@
+html {
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: inherit;
+}
+
+
+@keyframes rotator{
+    0%{
+        transform: translateX(-500px);
+    }
+    50%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: rtranslateX(-500px);
+    }
+}
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+.static{
+    height: 100px;
+    width: 100px;
+    background-color: red   ;
+    border: 1px solid black;
+    border-radius: 70%;
+}
+
+.animated{
+    height: 50px;
+    width: 50px;
+    border: 5px solid black;
+    border-radius: 70%;
+    background-color: blue;
+    animation-name: rotator;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+.animated:hover {
+    /* transition:  all 1s 0s ease-in; */
+
+
+}
