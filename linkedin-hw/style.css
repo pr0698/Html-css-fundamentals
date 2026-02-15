@@ -1,0 +1,105 @@
+html {
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: inherit;
+}
+
+.linkedin-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f2ef;  
+
+}
+.linkedin-card {
+  width: 700px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header .follow {
+  flex-grow: 1;
+  text-align: right;
+  margin: 10px;
+  color: #0a66c2;
+  font-weight: bold;
+}
+
+.header .follow span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #99c5f1;
+  border-radius: 2px;
+  padding: 9px;
+}
+
+.image-logo img {
+  border-radius: 70%;
+  margin: 10px;
+  height: 80px;
+  width: 80px;
+}
+
+.profile-header p {
+  margin: 0;
+  font-size: small;
+  font-weight: lighter;
+}
+.description {
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.image-banner {
+  margin: 10px;         
+  max-height: fit-content;
+}
+
+.image-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.post-footer img {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-item:hover {
+  background-color: #f3f2ef;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
